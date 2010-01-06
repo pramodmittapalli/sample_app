@@ -2,11 +2,13 @@ ActionController::Routing::Routes.draw do |map|
 map.contact '/contact', :controller => 'pages', :action => 'contact' 
 map.about '/about', :controller => 'pages', :action => 'about' 
 map.help '/help', :controller => 'pages', :action => 'help' 
-about_url => 'http://localhost:3000/about' 
-about_path => '/about'
-map.root '/', :controller => 'pages', :action => 'home' 
-root_url => 'localhost:3000/' 
-root_path => '/' 
+#about_url  => 'http://localhost:3000/about' 
+#about_path=>'/about'
+#contact_url=>'http://localhost:3000/contact' 
+#about_path=>'/contact'
+map.root :controller => 'pages', :action => 'home' 
+#root_url => 'localhost:3000/' 
+#root_path=>'/' 
 
   # The priority is based upon order of creation: first created -> highest priority.
 
